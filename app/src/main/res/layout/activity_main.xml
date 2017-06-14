@@ -11,7 +11,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.michal_hit_kody.liczba_dni.MainActivity"
-    android:background="@android:color/background_light">
+    android:background="@drawable/back">
 
     <TextView
         android:text="Liczba dni do ślubu Agnieszki i Michała"
@@ -23,15 +23,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:textAlignment="center" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/nowe"
-        android:id="@+id/imageView"
-        android:layout_marginTop="22dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="TextView"
@@ -62,14 +53,25 @@
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/textView3" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_horizontal"
+        android:layout_height="220dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+
     <TextView
         android:text="Pozostało"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
-        android:textSize="16sp"
-        android:layout_marginBottom="14dp"
+        android:textSize="21sp"
         android:layout_above="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/background_dark" />
 
 </RelativeLayout>
